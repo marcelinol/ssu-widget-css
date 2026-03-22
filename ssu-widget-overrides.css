@@ -1,54 +1,110 @@
-/* === Toolbar buttons === */
+/* ============================================
+   ScriptSure Drug History Widget - CSS Overrides
+   
+   Organized by section. Comment out any rule
+   to re-enable that element.
+   ============================================ */
 
-/* Hide Prescribe Drug button */
+
+/* --------------------------------------------
+   TOOLBAR
+   -------------------------------------------- */
+
+/* Prescribe Drug button */
 [class*="drug_history_prescribe_new_drug"] {
   display: none !important;
 }
 
-/* Hide top-right toolbar buttons (Last RX, Settings, Search, etc.) */
+/* Last RX, Deleted RX, Print, Settings (top-right group) */
 .flex.gap-4:has([class*="button_variant-text-beta"]) {
   display: none !important;
 }
 
-/* Hide "Last Prescription" dropdown button */
-.flex.gap-2 > button:has(> span.\\!text-secondary) {
+/* "Last Prescription" dropdown */
+.flex.gap-2 > button:has(> span.\!text-secondary) {
   display: none !important;
 }
 
-/* Hide drug search bar in toolbar */
-.flex.w-full.max-w-\\[280px\\] {
+/* Drug search bar */
+.flex.w-full.max-w-\[280px\] {
   display: none !important;
 }
 
-/* === Per-row action buttons === */
+/* Filter button (card view) */
+button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
+  display: none !important;
+}
 
-/* Hide Represcribe button */
+
+/* --------------------------------------------
+   ROW CHECKBOXES
+   -------------------------------------------- */
+
+/* Select checkboxes on each row */
+input[type="checkbox"][name^="selectable-list-check"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   ROW ACTION BUTTONS
+   -------------------------------------------- */
+
+/* Represcribe button */
 button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
   display: none !important;
 }
 
-/* Hide briefcase/archive button */
+/* Briefcase / archive button */
 button[class*="button_variant-filled-blue"] {
   display: none !important;
 }
 
-/* Hide per-row gear/settings button */
+/* Per-row gear / settings button */
 button[class*="button_variant-outlined-gray"] {
   display: none !important;
 }
 
-/* === Table view: hide last column (actions + slider) === */
+/* Info icon (i) next to drug name */
+span[aria-describedby^="react-ui-tooltip"]:has(> svg > path[d*="M13 16h-1v-4h-1m1-4h.01"]) {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   TABLE VIEW: hide actions column (includes slider)
+   -------------------------------------------- */
+
 th[aria-colindex="10"],
 td[aria-colindex="10"] {
   display: none !important;
 }
 
-/* === Card view: hide filter button === */
-button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
+
+/* --------------------------------------------
+   CARD VIEW: hide detail fields
+   
+   These target <tr> rows inside the detail
+   tables by matching the label text.
+   Uncomment any rule to show that field again.
+   -------------------------------------------- */
+
+/* Fill Date */
+tr:has(> td:first-child:contains("Fill Date")) {
   display: none !important;
 }
 
-/* === Both views: hide row checkboxes === */
-input[type="checkbox"][name^="selectable-list-check"] {
+/* Expires */
+tr:has(> td:first-child:contains("Expires")) {
+  display: none !important;
+}
+
+/* Provider Approval */
+tr:has(> td:first-child:contains("Provider Approval")) {
+  display: none !important;
+}
+
+/* Provider */
+tr:has(> td:first-child:contains("Provider:")) {
   display: none !important;
 }
