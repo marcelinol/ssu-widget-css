@@ -1,24 +1,54 @@
+/* === Toolbar buttons === */
+
 /* Hide Prescribe Drug button */
 [class*="drug_history_prescribe_new_drug"] {
   display: none !important;
 }
 
-/* Hide top-right toolbar buttons (Last RX, Settings, Search) */
+/* Hide top-right toolbar buttons (Last RX, Settings, Search, etc.) */
 .flex.gap-4:has([class*="button_variant-text-beta"]) {
   display: none !important;
 }
+
+/* Hide "Last Prescription" dropdown button */
+.flex.gap-2 > button:has(> span.\\!text-secondary) {
+  display: none !important;
+}
+
+/* Hide drug search bar in toolbar */
+.flex.w-full.max-w-\\[280px\\] {
+  display: none !important;
+}
+
+/* === Per-row action buttons === */
 
 /* Hide Represcribe button */
 button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
   display: none !important;
 }
 
-/* Hide briefcase button (next to represcribe) */
+/* Hide briefcase/archive button */
 button[class*="button_variant-filled-blue"] {
   display: none !important;
 }
 
 /* Hide per-row gear/settings button */
 button[class*="button_variant-outlined-gray"] {
+  display: none !important;
+}
+
+/* === Table view: hide last column (actions + slider) === */
+th[aria-colindex="10"],
+td[aria-colindex="10"] {
+  display: none !important;
+}
+
+/* === Card view: hide filter button === */
+button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
+  display: none !important;
+}
+
+/* === Both views: hide row checkboxes === */
+input[type="checkbox"][name^="selectable-list-check"] {
   display: none !important;
 }
