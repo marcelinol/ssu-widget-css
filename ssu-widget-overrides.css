@@ -1,0 +1,9 @@
+/* Test: hide Prescribe Drug button */
+[class*="drug_history_prescribe_new_drug"] {
+  display: none !important;
+}
+
+/* Hide Represcribe button */
+button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
+  display: none !important;
+}
