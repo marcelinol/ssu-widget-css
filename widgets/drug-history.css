@@ -1,0 +1,111 @@
+/* ============================================
+   ScriptSure Drug History Widget - CSS Overrides
+   
+   Organized by section. Comment out any rule
+   to re-enable that element.
+   ============================================ */
+
+
+/* --------------------------------------------
+   TOOLBAR
+   -------------------------------------------- */
+
+/* Prescribe Drug button */
+[class*="drug_history_prescribe_new_drug"] {
+  display: none !important;
+}
+
+/* Last RX, Deleted RX, Print, Settings (top-right group) */
+.flex.gap-4:has([class*="button_variant-text-beta"]) {
+  display: none !important;
+}
+
+/* "Last Prescription" dropdown */
+.flex.gap-2 > button:has(> span.\!text-secondary) {
+  display: none !important;
+}
+
+/* Drug search bar */
+.flex.w-full.max-w-\[280px\] {
+  display: none !important;
+}
+
+/* Filter button (card view) — KEPT VISIBLE for time-range filtering */
+/* button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
+  display: none !important;
+} */
+
+
+/* --------------------------------------------
+   ROW CHECKBOXES
+   -------------------------------------------- */
+
+/* Select checkboxes on each row */
+input[type="checkbox"][name^="selectable-list-check"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   ROW ACTION BUTTONS
+   -------------------------------------------- */
+
+/* Represcribe button */
+button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
+  display: none !important;
+}
+
+/* Briefcase / archive button */
+button[class*="button_variant-filled-blue"] {
+  display: none !important;
+}
+
+/* Per-row gear / settings button */
+button[class*="button_variant-outlined-gray"] {
+  display: none !important;
+}
+
+/* Info icon (i) next to drug name */
+span[aria-describedby^="react-ui-tooltip"]:has(> svg > path[d*="M13 16h-1v-4h-1m1-4h.01"]) {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   TABLE VIEW: hide actions column (includes slider)
+   -------------------------------------------- */
+
+th[aria-colindex="10"],
+td[aria-colindex="10"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   CARD VIEW: hide detail fields
+   
+   Left table row order:  1=Quantity, 2=Written Date, 3=Refill, 4=Fill Date, 5=Expires
+   Right table row order: 1=Pharmacy, 2=Provider Approval, 3=Provider
+   
+   Comment out any rule to show that field again.
+   -------------------------------------------- */
+
+/* Fill Date (left table, 4th row) */
+.grid-cols-\[1fr_2fr\] > table:first-child tr:nth-child(4) {
+  display: none !important;
+}
+
+/* Expires (left table, 5th row) */
+.grid-cols-\[1fr_2fr\] > table:first-child tr:nth-child(5) {
+  display: none !important;
+}
+
+/* Provider Approval (right table, 2nd row) */
+.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(2) {
+  display: none !important;
+}
+
+/* Provider (right table, 3rd row) */
+.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(3) {
+  display: none !important;
+}
