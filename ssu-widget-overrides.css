@@ -1,5 +1,10 @@
-/* Test: hide Prescribe Drug button */
+/* Hide Prescribe Drug button */
 [class*="drug_history_prescribe_new_drug"] {
+  display: none !important;
+}
+
+/* Hide top-right toolbar buttons (Last RX, Settings, Search) */
+.flex.gap-4:has([class*="button_variant-text-beta"]) {
   display: none !important;
 }
 
