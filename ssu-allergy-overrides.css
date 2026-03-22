@@ -1,0 +1,90 @@
+/* ============================================
+   ScriptSure Allergy Widget - CSS Overrides
+   
+   Organized by section. Comment out any rule
+   to re-enable that element.
+   ============================================ */
+
+
+/* --------------------------------------------
+   TOOLBAR
+   -------------------------------------------- */
+
+/* "Show Allergies" dropdown + label */
+[class*="allergy_toolbar_select_block"] {
+  display: none !important;
+}
+
+/* Print button (next to toolbar) */
+[class*="header_root"] > button[class*="button_variant-text-beta"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   ROW ACTION BUTTONS
+   -------------------------------------------- */
+
+/* Edit button */
+button[class*="button_variant-outlined-blue"]:has(> .allergy_mobile_list_actions_button, [class*="allergy_mobile_list_actions_button"]) {
+  display: none !important;
+}
+
+/* Archive button */
+button[class*="button_variant-outlined-orange"] {
+  display: none !important;
+}
+
+/* Edit button (fallback selector) */
+button[class*="allergy_mobile_list_actions_button"][class*="button_variant-outlined-blue"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   STATUS BADGE
+   -------------------------------------------- */
+
+/* Active/Inactive status label next to allergy name */
+span[class*="label_filled-green"],
+span[class*="label_filled-red"],
+span[class*="label_filled-orange"],
+span[class*="label_root"] {
+  display: none !important;
+}
+
+
+/* --------------------------------------------
+   ALLERGY DETAIL FIELDS TO HIDE
+   
+   These are inside the "Allergy" row cell.
+   Row order:
+     1 = Adverse Event Description  (HIDE)
+     2 = Severity                   (HIDE)
+     3 = Reaction                   (HIDE)
+     4 = Comment                    (HIDE)
+     5 = Onset Date                 (KEEP)
+     6 = End Date                   (KEEP)
+   
+   Comment out any rule to show that field again.
+   -------------------------------------------- */
+
+/* Adverse Event Description (1st detail line) */
+#name-cell .flex-col > .flex-col > div.font-normal:nth-child(2) {
+  display: none !important;
+}
+
+/* Severity (2nd detail line) */
+#name-cell .flex-col > .flex-col > div.font-normal:nth-child(3) {
+  display: none !important;
+}
+
+/* Reaction (3rd detail line) */
+#name-cell .flex-col > .flex-col > div.font-normal:nth-child(4) {
+  display: none !important;
+}
+
+/* Comment (4th detail line) */
+#name-cell .flex-col > .flex-col > div.font-normal:nth-child(5) {
+  display: none !important;
+}
