@@ -12,3 +12,13 @@
 button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
   display: none !important;
 }
+
+/* Hide briefcase button (next to represcribe) */
+button[class*="button_variant-filled-blue"] {
+  display: none !important;
+}
+
+/* Hide per-row gear/settings button */
+button[class*="button_variant-outlined-gray"] {
+  display: none !important;
+}
