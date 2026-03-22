@@ -20,6 +20,11 @@
   display: none !important;
 }
 
+/* Disclaimer text under "Current Allergies" header */
+.italic.text-sm.text-secondary {
+  display: none !important;
+}
+
 
 /* --------------------------------------------
    ROW ACTION BUTTONS
