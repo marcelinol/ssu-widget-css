@@ -84,27 +84,28 @@ td[aria-colindex="10"] {
 /* --------------------------------------------
    CARD VIEW: hide detail fields
    
-   These target <tr> rows inside the detail
-   tables by matching the label text.
-   Uncomment any rule to show that field again.
+   Left table row order:  1=Quantity, 2=Written Date, 3=Refill, 4=Fill Date, 5=Expires
+   Right table row order: 1=Pharmacy, 2=Provider Approval, 3=Provider
+   
+   Comment out any rule to show that field again.
    -------------------------------------------- */
 
-/* Fill Date */
-tr:has(> td:first-child:contains("Fill Date")) {
+/* Fill Date (left table, 4th row) */
+.grid-cols-\[1fr_2fr\] > table:first-child tr:nth-child(4) {
   display: none !important;
 }
 
-/* Expires */
-tr:has(> td:first-child:contains("Expires")) {
+/* Expires (left table, 5th row) */
+.grid-cols-\[1fr_2fr\] > table:first-child tr:nth-child(5) {
   display: none !important;
 }
 
-/* Provider Approval */
-tr:has(> td:first-child:contains("Provider Approval")) {
+/* Provider Approval (right table, 2nd row) */
+.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(2) {
   display: none !important;
 }
 
-/* Provider */
-tr:has(> td:first-child:contains("Provider:")) {
+/* Provider (right table, 3rd row) */
+.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(3) {
   display: none !important;
 }
