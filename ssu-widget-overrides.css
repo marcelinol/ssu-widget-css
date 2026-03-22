@@ -30,10 +30,10 @@
   display: none !important;
 }
 
-/* Filter button (card view) */
-button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
+/* Filter button (card view) — KEPT VISIBLE for time-range filtering */
+/* button:has(> svg > path[d*="M3 4a1 1 0 011-1h16"]) {
   display: none !important;
-}
+} */
 
 
 /* --------------------------------------------

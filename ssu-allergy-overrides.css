@@ -10,8 +10,13 @@
    TOOLBAR
    -------------------------------------------- */
 
-/* "Show Allergies" dropdown + label */
-[class*="allergy_toolbar_select_block"] {
+/* "Show Allergies" dropdown — KEPT VISIBLE for filtering */
+/* [class*="allergy_toolbar_select_block"] {
+  display: none !important;
+} */
+
+/* "Add an allergy" search input */
+[class*="allergy_toolbar_select_block"] .flex.items-center.gap-3 {
   display: none !important;
 }
 
