@@ -137,8 +137,8 @@ span.cursor-pointer {
   cursor: default !important;
 }
 
-/* "Received Prescription" / "In Transit" status button */
-button[class*="button_variant-text-green"] {
+/* Prescription status buttons (Received, In Transit, etc.) */
+button.\!w-max[class*="button_variant-text-"] {
   pointer-events: none !important;
   cursor: default !important;
 }
