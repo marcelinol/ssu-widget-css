@@ -109,3 +109,26 @@ td[aria-colindex="10"] {
 .grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(3) {
   display: none !important;
 }
+
+
+/* --------------------------------------------
+   DISABLE CLICKS (keep visible, remove interactivity)
+   -------------------------------------------- */
+
+/* "Active" status button on the left */
+button.bg-blue-50.-rotate-90 {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Drug name (clickable span) */
+span.cursor-pointer {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* "Received Prescription" / "In Transit" status button */
+button[class*="button_variant-text-green"] {
+  pointer-events: none !important;
+  cursor: default !important;
+}
