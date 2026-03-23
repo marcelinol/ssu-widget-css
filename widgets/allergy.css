@@ -30,16 +30,17 @@
   display: none !important;
 }
 
-/* Remove white panel border and make background uniform */
+/* Make outer background white to match prescriptions widget */
+.flex-grow.flex.flex-col {
+  background-color: white !important;
+}
+
+/* Remove inner panel border for seamless look */
 .rounded-md.bg-primary.border.border-primary {
   border: none !important;
 }
 
-.bg-white.dark\:bg-primary.overflow-hidden {
-  background-color: transparent !important;
-}
-
-/* Hide "Current Allergies" header */
+/* Hide "Current Allergies" header (redundant with outer heading) */
 .flex.flex-col.items-start.min-h-\[48px\] {
   display: none !important;
 }
