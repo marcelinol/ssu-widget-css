@@ -30,6 +30,11 @@
   display: none !important;
 }
 
+/* "Search For New Allergy Above" empty state text */
+.capitalize.text-2xl {
+  display: none !important;
+}
+
 
 /* --------------------------------------------
    ROW ACTION BUTTONS
