@@ -85,6 +85,10 @@ span[aria-describedby^="react-ui-tooltip"]:has(> svg > path[d*="M13 16h-1v-4h-1m
    TABLE VIEW: hide actions column (includes slider)
    -------------------------------------------- */
 
+/* User(s) column */
+th[aria-colindex="8"],
+td[aria-colindex="8"],
+/* Actions column (includes slider) */
 th[aria-colindex="10"],
 td[aria-colindex="10"] {
   display: none !important;
@@ -110,15 +114,6 @@ td[aria-colindex="10"] {
   display: none !important;
 }
 
-/* Provider Approval (right table, 2nd row) */
-.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(2) {
-  display: none !important;
-}
-
-/* Provider (right table, 3rd row) */
-.grid-cols-\[1fr_2fr\] > table:last-child tr:nth-child(3) {
-  display: none !important;
-}
 
 
 /* --------------------------------------------
