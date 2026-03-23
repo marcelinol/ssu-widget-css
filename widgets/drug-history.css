@@ -1,6 +1,6 @@
 /* ============================================
-   ScriptSure Drug History Widget - CSS Overrides
-   
+   Drug History Widget - CSS Overrides
+
    Organized by section. Comment out any rule
    to re-enable that element.
    ============================================ */
@@ -55,6 +55,16 @@ button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
   display: none !important;
 }
 
+/* Approve button (queued prescriptions) */
+#root button[class*="button_variant-filled-alpha"]:not([class*="w-[94px]"]):not([class*="!w-8"]):not([class*="!rounded-l-none"]) {
+  display: none !important;
+}
+
+/* Deny button (queued prescriptions) */
+#root button[class*="button_variant-outlined-red"] {
+  display: none !important;
+}
+
 /* Briefcase / archive button */
 button[class*="button_variant-filled-blue"] {
   display: none !important;
@@ -83,10 +93,10 @@ td[aria-colindex="10"] {
 
 /* --------------------------------------------
    CARD VIEW: hide detail fields
-   
+
    Left table row order:  1=Quantity, 2=Written Date, 3=Refill, 4=Fill Date, 5=Expires
    Right table row order: 1=Pharmacy, 2=Provider Approval, 3=Provider
-   
+
    Comment out any rule to show that field again.
    -------------------------------------------- */
 
