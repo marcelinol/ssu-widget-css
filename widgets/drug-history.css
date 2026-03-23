@@ -139,7 +139,8 @@ span.cursor-pointer {
 
 /* Prescription status indicators (Received, In Transit, Cancellation Requested, etc.) */
 button.\!w-max[class*="button_variant-text-"],
-.grid-cols-\[1fr_2fr\] div[aria-describedby^="react-ui-tooltip"] {
+.grid-cols-\[1fr_2fr\] div[aria-describedby^="react-ui-tooltip"],
+.grid-cols-\[1fr_2fr\] div[aria-describedby^="react-ui-tooltip"] * {
   pointer-events: none !important;
   cursor: default !important;
 }
