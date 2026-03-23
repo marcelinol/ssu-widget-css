@@ -1,8 +1,21 @@
 /* ============================================
    Allergy Widget - CSS Overrides
 
-   Organized by section. Comment out any rule
-   to re-enable that element.
+   HIDDEN:
+   - Toolbar: Add allergy search, No Known Allergies button, print button
+   - Row actions: Edit, Archive, Unarchive buttons
+   - Status badges (Active, Archived, etc.)
+   - Detail fields: Adverse Event Description, Severity, Reaction, Comment
+   - "Current Allergies" header, disclaimer text
+   - "Search For New Allergy Above" empty state text
+   - Inner panel border (uniform white background)
+
+   VISIBLE:
+   - Show Allergies dropdown (filter)
+   - Date added, allergy name, type, onset date, end date, recorded by
+   - EPCS modal buttons (Yes/No)
+
+   Organized by section. Comment out any rule to re-enable.
    ============================================ */
 
 

@@ -1,8 +1,25 @@
 /* ============================================
    Drug History Widget - CSS Overrides
 
-   Organized by section. Comment out any rule
-   to re-enable that element.
+   HIDDEN:
+   - Toolbar: Prescribe Drug, Last RX, search bar, settings, Last Prescription dropdown
+   - Row actions: Represcribe, briefcase, gear, Approve, Deny buttons
+   - Row checkboxes
+   - Info icon next to drug name
+   - Card view: Fill Date, Expires fields
+   - Table view: User(s) column, Actions column (slider)
+
+   NON-CLICKABLE (visible but disabled):
+   - Active/Queued/Cancel status badge
+   - Drug name
+   - Prescription status (Received, In Transit, Cancellation Requested)
+
+   VISIBLE:
+   - Filter button, drug name, directions, quantity, written date, refill
+   - Pharmacy/destination, provider, provider approval, status badge
+   - EPCS modal buttons (Yes/No)
+
+   Organized by section. Comment out any rule to re-enable.
    ============================================ */
 
 
