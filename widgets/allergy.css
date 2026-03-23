@@ -21,7 +21,7 @@
 }
 
 /* Print button (next to toolbar) */
-[class*="header_root"] > button[class*="button_variant-text-beta"] {
+[class*="allergy_toolbar_select_block"] > button[class*="button_variant-text-beta"] {
   display: none !important;
 }
 
