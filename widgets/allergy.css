@@ -1,6 +1,6 @@
 /* ============================================
-   ScriptSure Allergy Widget - CSS Overrides
-   
+   Allergy Widget - CSS Overrides
+
    Organized by section. Comment out any rule
    to re-enable that element.
    ============================================ */
@@ -27,6 +27,20 @@
 
 /* Disclaimer text under "Current Allergies" header */
 .italic.text-sm.text-secondary {
+  display: none !important;
+}
+
+/* Remove white panel border and make background uniform */
+.rounded-md.bg-primary.border.border-primary {
+  border: none !important;
+}
+
+.bg-white.dark\:bg-primary.overflow-hidden {
+  background-color: transparent !important;
+}
+
+/* Hide "Current Allergies" header */
+.flex.flex-col.items-start.min-h-\[48px\] {
   display: none !important;
 }
 
@@ -71,7 +85,7 @@ span[class*="label_root"] {
 
 /* --------------------------------------------
    ALLERGY DETAIL FIELDS TO HIDE
-   
+
    These are inside the "Allergy" row cell.
    Row order:
      1 = Adverse Event Description  (HIDE)
@@ -80,7 +94,7 @@ span[class*="label_root"] {
      4 = Comment                    (HIDE)
      5 = Onset Date                 (KEEP)
      6 = End Date                   (KEEP)
-   
+
    Comment out any rule to show that field again.
    -------------------------------------------- */
 
