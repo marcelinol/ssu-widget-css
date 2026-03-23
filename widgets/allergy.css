@@ -44,7 +44,7 @@
 }
 
 /* Make outer background white to match prescriptions widget */
-.flex-grow.flex.flex-col {
+body {
   background-color: white !important;
 }
 
@@ -54,7 +54,7 @@
 }
 
 /* Hide "Current Allergies" header (redundant with outer heading) */
-.flex.flex-col.items-start.min-h-\[48px\] {
+.border-b.border-primary.font-semibold {
   display: none !important;
 }
 

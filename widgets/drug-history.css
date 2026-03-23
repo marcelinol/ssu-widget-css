@@ -42,7 +42,7 @@
   display: none !important;
 }
 
-/* Drug search bar */
+/* Drug search bar (no semantic class available; max-w-[280px] is unique to this element) */
 .flex.w-full.max-w-\[280px\] {
   display: none !important;
 }
@@ -72,12 +72,8 @@ button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
   display: none !important;
 }
 
-/* Approve button (queued prescriptions) */
-#root button[class*="button_variant-filled-alpha"]:not([class*="w-[94px]"]):not([class*="!w-8"]):not([class*="!rounded-l-none"]) {
-  display: none !important;
-}
-
-/* Deny button (queued prescriptions) */
+/* Approve and Deny buttons (queued prescriptions — rows have bg-orange-50 background) */
+.bg-orange-50 button[class*="button_variant-filled-alpha"],
 #root button[class*="button_variant-outlined-red"] {
   display: none !important;
 }
