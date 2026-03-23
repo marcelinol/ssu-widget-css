@@ -70,6 +70,11 @@ button[class*="allergy_mobile_list_actions_button"][class*="button_variant-outli
   display: none !important;
 }
 
+/* Unarchive button */
+button[class*="button_variant-outlined-beta"] {
+  display: none !important;
+}
+
 
 /* --------------------------------------------
    STATUS BADGE
