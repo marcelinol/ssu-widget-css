@@ -60,8 +60,8 @@ button[class*="button_variant-filled-blue"] {
   display: none !important;
 }
 
-/* Per-row gear / settings button */
-button[class*="button_variant-outlined-gray"] {
+/* Per-row gear / settings button (scoped to #root to avoid hiding modal buttons) */
+#root button[class*="button_variant-outlined-gray"] {
   display: none !important;
 }
 
