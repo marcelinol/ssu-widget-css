@@ -24,15 +24,6 @@
 
 
 /* --------------------------------------------
-   BACKGROUND
-   -------------------------------------------- */
-
-body {
-  background-color: white !important;
-}
-
-
-/* --------------------------------------------
    TOOLBAR
    -------------------------------------------- */
 
@@ -42,7 +33,8 @@ body {
 }
 
 /* Last RX, Deleted RX, Print, Settings (top-right group) */
-.flex.gap-4:has([class*="button_variant-text-beta"]) {
+.flex.gap-4:has([class*="button_variant-text-beta"]),
+.flex.gap-4:has([class*="button_variant-text-gray"]) {
   display: none !important;
 }
 
@@ -76,8 +68,9 @@ input[type="checkbox"][name^="selectable-list-check"] {
    ROW ACTION BUTTONS
    -------------------------------------------- */
 
-/* Represcribe button */
-button[class*="button_variant-filled-alpha"][class*="w-[94px]"] {
+/* Represcribe button and its dropdown group wrapper */
+button[class*="button_variant-filled-alpha"][class*="w-[94px]"],
+[class*="button_group"] {
   display: none !important;
 }
 
